@@ -1,0 +1,664 @@
+@import "./iconfont.wxss";
+/* 统一设置初始化页面背景色，有更改需要在本页面内部进行更改 */
+
+page {
+  background-color: #ffffff;
+}
+
+/* 文字大小样式 */
+
+.font-size-54 {
+  font-size: 54rpx !important;
+}
+
+.font-size-48 {
+  font-size: 48rpx !important;
+}
+
+.font-size-44 {
+  font-size: 44rpx !important;
+}
+
+.font-size-40 {
+  font-size: 40rpx !important;
+}
+
+.font-size-36 {
+  font-size: 36rpx !important;
+}
+
+.font-size-34 {
+  font-size: 34rpx !important;
+}
+
+.font-size-32 {
+  font-size: 32rpx !important;
+}
+
+.font-size-30 {
+  font-size: 30rpx !important;
+}
+
+.font-size-28 {
+  font-size: 28rpx !important;
+}
+
+.font-size-26 {
+  font-size: 26rpx !important;
+}
+
+.font-size-24 {
+  font-size: 24rpx !important;
+}
+
+.font-size-23 {
+  font-size: 23rpx !important;
+}
+
+.font-size-20 {
+  font-size: 20rpx !important;
+}
+
+.font-size-15 {
+  font-size: 15rpx !important;
+}
+
+/* 文字颜色样式 */
+
+.font-color-blue {
+  color: #3d8dfb !important;
+}
+
+.font-color-white {
+  color: #ffffff !important;
+}
+
+.font-color-gray {
+  color: #868282 !important;
+}
+
+.font-color-red {
+  color: #fe5745 !important;
+}
+
+/* 文字加重格式 */
+
+.font-weight-bold {
+  font-weight: bold !important;
+}
+
+.font-weight-600 {
+  font-weight: 600 !important;
+}
+
+.font-weight-900 {
+  font-weight: 900 !important;
+}
+
+/* 外边距居中 */
+
+.margin-horizon-center {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.margin-vertical-center {
+  margin-top: auto !important;
+  margin-bottom: auto !important;
+}
+
+/* 外边距 */
+
+.mgb-5 {
+  margin-bottom: 5rpx !important;
+}
+
+.mgb-7 {
+  margin-bottom: 7rpx !important;
+}
+
+.margin-none {
+  margin: 0px !important;
+}
+
+/* 内边距 */
+
+.padding-none {
+  padding: 0px !important;
+}
+
+/* 组件尺寸 */
+
+.full-size {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.height-unset {
+  height: unset !important;
+}
+
+/* 左右居中（包含flex布局）*/
+
+.flex-horizon-center {
+  justify-content: center;
+}
+
+.flex-horizon-right {
+  justify-content: flex-end;
+}
+
+/* 边框弯曲度 */
+
+.border-round {
+  border-radius: 50% !important;
+}
+
+.radius-28 {
+  border-radius: 28rpx;
+}
+
+.radius-20 {
+  border-radius: 20rpx;
+}
+
+.radius-15 {
+  border-radius: 15rpx;
+}
+
+/* 背景颜色 */
+
+.bg-color-white {
+  background-color: #ffffff !important;
+}
+
+.bg-color-blue {
+  background-color: #3d8dfb !important;
+}
+
+/** 初始化没有数据 */
+
+.on-load-no-data {
+  font-size: 250rpx;
+  color: #dbdbdb;
+}
+
+/** 客服 */
+
+.customer-top {
+  z-index: 9999;
+  position: fixed;
+  bottom: 158rpx;
+  right: 50rpx;
+}
+
+.customer-service {
+  background-color: #ec6a17;
+  height: 90rpx;
+  width: 90rpx;
+  line-height: 90rpx;
+  border-radius: 50%;
+}
+
+.service-call {
+  font-size: 63rpx;
+  color: #ffffff;
+}
+
+.service-name {
+  font-size: 24rpx;
+  color: #ec6a17;
+}
+
+.customer-top button {
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+
+/** 底部菜单 */
+
+.tarbar {
+  clear: both;
+}
+
+.tarbar .placeholder {
+  height: 90rpx;
+  bottom: 0rpx;
+}
+
+.tarbar .menu {
+  z-index: 9999;
+  background-color: #ffffff;
+  height: 90rpx;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  bottom: 0rpx;
+  text-align: center;
+}
+
+.tarbar .item {
+  flex: 1;
+}
+
+.tarbar .item image {
+  height: 55rpx;
+  width: 55rpx;
+}
+
+.tarbar .item .pic {
+  margin-top: 4rpx;
+}
+
+.tarbar .item .text {
+  margin-top: -22rpx;
+  font-size: 20rpx;
+  color: #666666;
+}
+
+.mg-auto {
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.mgt-5 {
+  margin-top: 10rpx !important;
+}
+
+.mgt-10 {
+  margin-top: 20rpx !important;
+}
+
+.mgt-15 {
+  margin-top: 20rpx !important;
+}
+
+.mgt-20 {
+  margin-top: 40rpx !important;
+}
+
+.mgt-30 {
+  margin-top: 60rpx !important;
+}
+
+.mgt-50 {
+  margin-top: 100rpx !important;
+}
+
+.mgt-100 {
+  margin-top: 200rpx !important;
+}
+
+.mgb-10 {
+  margin-bottom: 20rpx !important;
+}
+
+.mgb-20 {
+  margin-bottom: 40rpx !important;
+}
+
+.mgb-35 {
+  margin-bottom: 35rpx !important;
+}
+
+.mgb-60 {
+  margin-bottom: 60rpx !important;
+}
+
+.mgl-20 {
+  margin-left: 40rpx !important;
+}
+
+.mgl-5 {
+  margin-left: 10rpx !important;
+}
+
+.mgl-2 {
+  margin-left: 4rpx !important;
+}
+
+.mgr-20 {
+  margin-right: 20rpx !important;
+}
+
+.mgr-30 {
+  margin-right: 30rpx !important;
+}
+
+.mgr-40 {
+  margin-right: 40rpx !important;
+}
+
+.mgr-5 {
+  margin-right: 10rpx !important;
+}
+
+.mgt-10 {
+  margin-top: 20rpx !important;
+}
+
+.mgb-10 {
+  margin-bottom: 20rpx !important;
+}
+
+.mgl-10 {
+  margin-left: 20rpx !important;
+}
+
+.mgr-10 {
+  margin-right: 20rpx !important;
+}
+
+.flex {
+  display: flex !important;
+}
+
+.justify-center {
+  justify-content: center !important;
+}
+
+.align-center {
+  align-items: center !important;
+}
+
+.bold {
+  font-size: 18px;
+  color: #333;
+}
+
+.pd-10 {
+  padding: 10rpx !important;
+}
+
+.pd-20 {
+  padding: 20rpx !important;
+}
+
+.pdl-10 {
+  padding-left: 10rpx !important;
+}
+
+.pdr-10 {
+  padding-right: 10rpx !important;
+}
+
+.pdt-10 {
+  padding-top: 10rpx !important;
+}
+
+.pdb-10 {
+  padding-bottom: 10rpx !important;
+}
+
+.pdl-20 {
+  padding-left: 20rpx !important;
+}
+
+.pdr-20 {
+  padding-right: 20rpx !important;
+}
+
+.pdt-70 {
+  padding-top: 70rpx !important;
+}
+
+.pdb-20 {
+  padding-bottom: 20rpx !important;
+}
+
+.pdb-30 {
+  padding-bottom: 30rpx !important;
+}
+
+.full-width {
+  width: 100% !important;
+}
+
+.full-height {
+  height: 100% !important;
+}
+
+.w-30 {
+  width: 30vw !important;
+}
+
+.w-70 {
+  width: 70vw !important;
+}
+
+.w-10 {
+  width: 10vw !important;
+}
+
+.w-90 {
+  width: 90vw !important;
+}
+
+.w-20 {
+  width: 20vw !important;
+}
+
+.w-15 {
+  width: 15vw !important;
+}
+
+.w-13 {
+  width: 13vw !important;
+}
+
+.w-30 {
+  width: 30vw !important;
+}
+
+.w-35 {
+  width: 35vw !important;
+}
+
+.w-40 {
+  width: 40vw !important;
+}
+
+.w-80 {
+  width: 80vw !important;
+}
+
+.w-40 {
+  width: 40vw !important;
+}
+
+.w-60 {
+  width: 60vw !important;
+}
+
+.w-50 {
+  width: 50vw !important;
+}
+
+.w-25 {
+  width: 25vw !important;
+}
+
+.w-35 {
+  width: 35vw !important;
+}
+
+.h-8 {
+  height: 8vh !important;
+}
+
+.mult-line-first {
+  font-size: 16px;
+  color: rgba(130, 130, 130, 1);
+  width: 30vw;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mult-line-second {
+  font-size: 18px;
+  width: 30vw;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mult-line-third {
+  font-size: 16px;
+  color: rgba(130, 130, 130, 1);
+  width: 30vw;
+  text-align: right;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mult-line-forth {
+  font-size: 18px;
+  width: 10vw;
+  text-align: left;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.bg-white {
+  background: white !important;
+}
+
+.font-blue {
+  color: rgba(25, 137, 250, 1) !important;
+}
+
+.text-underline {
+  text-decoration: underline !important;
+}
+
+.font-blue {
+  color: #1989fa !important;
+}
+
+.font-red {
+  color: rgba(229, 28, 35, 1) !important;
+}
+
+.font-yellow {
+  color: #ff9800 !important;
+}
+
+.bottom-btn {
+  position: fixed;
+  bottom: 30rpx;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-btn-unstable {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-column {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.justify-around {
+  justify-content: space-around !important;
+}
+
+.font-gray {
+  color: rgba(122, 126, 131, 1) !important;
+}
+
+.f-14 {
+  font-size: 14px !important;
+}
+
+.f-18 {
+  font-size: 18px !important;
+}
+
+.f-20 {
+  font-size: 20px !important;
+}
+
+.fix-bottom {
+  position: fixed !important;
+  bottom: 10rpx !important;
+}
+
+.radius-5 {
+  border-radius: 5px !important;
+}
+
+.logo-img {
+  height: 374rpx;
+  width: 100%;
+}
+
+.fix-btm-mg {
+  margin-bottom: -5px !important;
+}
+
+.font-yellow {
+  color: #ff9800;
+}
+
+.font-small {
+  font-size: 25rpx;
+}
+
+.align-center {
+  text-align: center !important;
+}
+
+.align-left {
+  text-align: left !important;
+}
+
+.align-right {
+  text-align: right !important;
+}
+
+.mgb-start {
+  margin-bottom: 220rpx;
+}
+
+.mgb-return {
+  margin-bottom: 100rpx;
+}
+
+.mgb-start-carry {
+  margin-bottom: 340rpx;
+}
+
+.border-gray {
+  border: 1px solid #bbbbbb;
+}
+
+.border-red {
+  border: 1px solid red;
+}
+
+.border-none {
+  border: 0px !important;
+}
+
+.button-line {
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 30rpx;
+}
+
+.bottom-btn-margin {
+  margin-bottom: 130rpx;
+}
+
+.border-bottom-line {
+  border-bottom: 1px solid #dddddd !important;
+}

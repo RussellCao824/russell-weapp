@@ -1,0 +1,28 @@
+<view class="nav-bar-line" style="top:{{statusBarHeight}}px;height:{{navContentHeight}}px;background-color:{{bgColor}}">
+    <!-- 非搜索栏模式 -->
+    <block wx:if="{{!searchShow}}">
+        <!-- 标题 -->
+        <view style="color:{{titleColor}};font-size:{{titleSize}}rpx;font-weight:{{titleWeight}}">
+            {{title}}
+        </view>
+        <!-- 返回键和主页键 -->
+        <view class="navigate-action">
+            <i wx:if="{{returnShow}}" class="iconfont {{returnIcon}} mgr-40" style="font-size:{{returnIconSize}}rpx;color:{{iconColor}}" bindtap="goReturn"></i>
+            <i wx:if="{{indexShow}}" class="iconfont {{indexIcon}}" style="font-size:{{indexIconSize}}rpx;color:{{iconColor}}" bindtap="goIndex"></i>
+        </view>
+    </block>
+    <!-- 搜索栏模式 -->
+    <block wx:else>
+        <view class="search-area" style="width:{{searchAreaWidth}}rpx">
+            <!-- 搜索框自定义附加内容区域 -->
+            <view wx:if="{{searchSubShow}}" class="search-sub" style="width:25%">
+                <slot></slot>
+            </view>
+            <!-- 搜索框本体区域 -->
+            <view class="search-input" style="width:{{searchSubShow ? 70 : 100}}%;" bindtap="goSearch">
+                <i class="iconfont {{searchIcon}} mgl-10 font-color-gray"></i>
+                <font class="mgl-5 font-color-gray">{{searchPlaceholder}}</font>
+            </view>
+        </view>
+    </block>
+</view>

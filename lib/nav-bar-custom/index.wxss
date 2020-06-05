@@ -1,0 +1,56 @@
+@import "../index.wxss";
+.nav-bar-line {
+  width: 100vw;
+  position: absolute;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navigate-action {
+  position: absolute;
+  left: 25rpx;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search-area {
+  position: absolute;
+  left: 20rpx;
+  height: 100%;
+  margin-right: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.search-sub {
+  display: flex;
+}
+
+.search-input {
+  height: 68%;
+  background-color: #f4f8fb;
+  border-radius: 30rpx;
+  font-size: 24rpx;
+  display: flex;
+  align-items: center;
+}
+
+.mgr-40 {
+  margin-right: 40rpx !important;
+}
+
+.mgl-5 {
+  margin-right: 5rpx !important;
+}
+
+.mgl-10 {
+  margin-right: 10rpx !important;
+}
+
+.font-color-gray {
+  color: #868282 !important;
+}

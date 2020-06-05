@@ -1,0 +1,20 @@
+{
+  "name": "russell-weapp",
+  "version": "1.0.3",
+  "description": "russell-weapp 是菜鸟程序员 RussellCoder 编写的非常实用的微信小程序自定义组件库，感兴趣的可以一探究竟。",
+  "main": "index.js",
+  "miniprogram": "lib",
+  "keywords": [
+    "微信小程序",
+    "自定义组件",
+    "ES6"
+  ],
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RussellCao",
+  "license": "MIT"
+}
