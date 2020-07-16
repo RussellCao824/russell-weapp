@@ -1,0 +1,14 @@
+@import "../style/index.wxss";
+
+.member-item-line {
+  width: 680rpx;
+  height: 96rpx;
+  display: flex;
+}
+
+.select-title {
+  width: 60%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

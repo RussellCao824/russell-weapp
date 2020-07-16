@@ -1,0 +1,56 @@
+@import "../style/index.wxss";
+
+.sub-title {
+  font-size: 26rpx;
+  color: #888888;
+}
+
+.status-info {
+  display: flex;
+  align-items: center;
+}
+
+.font-black {
+  color: rgba(48, 49, 51, 1);
+}
+
+.alert-msg {
+  color: rgba(229, 28, 35, 1);
+}
+
+.margin-top-50 {
+  margin-top: 50%;
+}
+
+.font-title {
+  font-size: 36rpx !important;
+}
+
+.font-small {
+  font-size: 30rpx;
+}
+
+.font-red {
+  color: red;
+}
+
+.font-green {
+  color: green;
+}
+
+.border-bottom-line {
+  border-bottom: 1px solid #dddddd !important;
+}
+
+.image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 16rpx;
+  display: block;
+}
+
+.title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

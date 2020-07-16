@@ -1,0 +1,25 @@
+<view class="weui-cell panel-box margin-horizon-center" style="width:{{width}}rpx;height:{{height}}rpx;border-radius:{{borderRadius}}rpx;margin-bottom:{{marginBottom}}rpx">
+    <!-- 文字描述部分，一般最多分为3行 -->
+    <view class="weui-cell__hd">
+        <!-- 第一行：标题行 -->
+        <view class="weui-flex__item font-size-32 panel-title mgb-7 font-weight-bold">
+            {{ panelData.title }}
+            <!-- 状态按钮 -->
+            <span class="statusButton mgl-10" style="border:1px solid {{statusColor}};color:{{statusColor}}" wx:if="{{panelData.statusShow}}">
+                {{panelData.statusInfo}}
+            </span>
+        </view>
+        <!-- 第二行：附加文字行 -->
+        <view class="font-size-28 font-color-blue mgb-7">{{panelData.subTitle}}</view>
+        <!-- 第三行：附加文字行 -->
+        <view class="font-size-24 font-color-gray">{{panelData.info}}</view>
+    </view>
+    <!-- 是否显示图片组件 -->
+    <view wx:if="{{hasPic}}" class="weui-cell__bd image-box">
+        <image class="image border-round" mode="aspectFill" src="{{panelData.picSrc}}" />
+    </view>
+    <!-- 不显示图片的话，右侧指定为父页面自定义 -->
+    <view wx:else class="weui-cell__bd image-box">
+        <slot></slot>
+    </view>
+</view>

@@ -1,0 +1,34 @@
+@import "../style/index.wxss";
+
+.post-line {
+  position: fixed;
+  bottom: 20rpx;
+  left: 45rpx;
+}
+
+.member-item-line {
+  width: 660rpx;
+  height: 96rpx;
+  display: flex;
+}
+
+.post-button {
+  width: 140rpx;
+  height: 50rpx;
+  border-radius: 30rpx;
+  border: 1px solid #4a95ea;
+  color: #4a95ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-date-picker {
+  display: flex;
+  align-items: center;
+}
+
+.date-text {
+  position: relative;
+  top: -3rpx;
+}

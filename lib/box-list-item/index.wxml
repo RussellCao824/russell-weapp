@@ -1,0 +1,3 @@
+<view class="margin-horizon-center" style="background-color:{{bgColor}};border-radius:{{borderRadius}}rpx;width:{{width}}rpx;height:{{height}}rpx;display:flex;align-items:{{alignItems}};justify-content: {{justifyContent}};margin-bottom:{{marginBottom}}rpx">
+  <slot></slot>
+</view>

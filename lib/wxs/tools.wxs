@@ -1,0 +1,90 @@
+/**
+ * 转换数字为指定小数位的浮点数
+ * @param amount 
+ * @param bit 
+ */
+var numberToFixed = function (amount, bit) {
+    return amount.toFixed(bit);
+}
+
+/**
+ * 日常记录状态值转换
+ * @param status 
+ */
+var dailyStatusConvert = function (status) {
+    var statusTitle = '';
+    switch (status) {
+        case 1: statusTitle = '待审核'; break;
+        case 2: statusTitle = '审核通过'; break;
+        case 3: statusTitle = '审核拒绝'; break;
+        default: break;
+    }
+    return statusTitle;
+}
+
+/**
+ * 日常记录状态值颜色转换
+ * @param status 
+ */
+var dailyStatusColorConvert = function (status) {
+    var statusColor = '';
+    switch (status) {
+        case 1: statusColor = '#FFA233'; break;
+        case 2: statusColor = '#07c161'; break;
+        case 3: statusColor = '#FF333F'; break;
+        default: break;
+    }
+    return statusColor;
+}
+
+/**
+ * 家榜首页根据家榜状态值显示家榜类型转换
+ * @param status 
+ */
+var boardStatusConvert = function (status) {
+    var iconColor = '';
+    //自定义组件中，不管是私有数据data对象还是对外属性properties，其调用均属于data，即this.data.variable
+    switch (status) {
+        //注意整形数字通过父页面向自定义组件传递后不可避免的类型要发生变化
+        //公榜
+        case 1:
+            iconColor = 'iconaixin';
+            break;
+        //红榜
+        case 2:
+            iconColor = 'iconaixin-fill font-color-red';
+            break;
+        //黑榜
+        case 3:
+            iconColor = 'iconaixin-fill';
+            break;
+        default: break;
+    }
+    return iconColor;
+}
+
+/**
+ * 家榜列表单位自定义组件判断登录用户是否在某条家榜的某类型的评价列表中
+ * @param id 
+ * @param data 
+ */
+var boardCommentCheck = function (id, data) {
+    var result = false;
+    for (i = 0; i < data.length; i++) {
+        if (data[i].id == id) {
+            result = true;
+            break;
+        }
+    }
+    return result;
+}
+
+
+
+module.exports = {
+    numberToFixed: numberToFixed,
+    dailyStatusConvert: dailyStatusConvert,
+    dailyStatusColorConvert: dailyStatusColorConvert,
+    boardStatusConvert: boardStatusConvert,
+    boardCommentCheck: boardCommentCheck
+}

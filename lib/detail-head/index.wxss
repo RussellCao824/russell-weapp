@@ -1,0 +1,6 @@
+@import "../style/index.wxss";
+
+.detail-head {
+  width: 100vw;
+  border: 0px;
+}

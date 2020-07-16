@@ -1,0 +1,13 @@
+<view class="input-line" style="left:{{left}}rpx">
+  <view class="weui-cell weui-cell_example padding-none member-item-line margin-horizon-center">
+    <view class="weui-cell__bd weui-cell_primary font-size-28">
+      <slot></slot>
+    </view>
+    <view>
+      <input placeholder="{{placeholder}}" value="{{inputValue}}" focus="{{isFocus}}" bindinput="bindInput" bindblur="bindBlur" />
+    </view>
+    <view>
+      <font class="font-size-28">{{postTitle}}</font>
+    </view>
+  </view>
+</view>

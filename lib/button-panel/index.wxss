@@ -1,0 +1,27 @@
+@import "../style/index.wxss";
+
+.panel-box {
+  background-color: #ffffff;
+}
+
+.statusButton {
+  border-radius: 25rpx;
+  font-size: 20rpx;
+  padding: 5rpx 10rpx;
+}
+
+.panel-title {
+  display: flex;
+  align-items: center;
+}
+
+.image-box {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.image {
+  width: 170rpx;
+  height: 170rpx;
+}

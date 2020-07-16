@@ -1,0 +1,12 @@
+@import "../style/index.wxss";
+
+.box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 150rpx;
+  margin-left: 300rpx;
+  margin-top: 300rpx;
+  align-items: center;
+  justify-content: center;
+}

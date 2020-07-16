@@ -1,0 +1,6 @@
+<view wx:if="{{show}}" class="box">
+  <view class="top">
+    <i class="iconfont iconicon font-size-60 font-color-gray"></i>
+  </view>
+  <view class="bottom font-size-26 font-color-gray mgt-10">{{text}}</view>
+</view>

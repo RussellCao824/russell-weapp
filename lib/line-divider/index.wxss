@@ -1,0 +1,7 @@
+@import "../style/index.wxss";
+
+.divier {
+  margin: auto;
+  position: relative;
+  left: 0px;
+}

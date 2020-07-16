@@ -1,0 +1,25 @@
+<view class="content-area margin-horizon-center" style="border-radius:{{radius}}rpx;top:{{top}}rpx">
+  <!-- 信息展示区域 -->
+  <view wx:for="{{detailInfo}}" wx:key="index" class="content-item margin-horizon-center">
+    <view class="title font-color-gray">{{item.title}}:</view>
+    <view class="info">{{item.info}}</view>
+  </view>
+  <!-- 详情图片展示区域 -->
+  <block wx:if="{{hasImage}}">
+    <view class="content-item margin-horizon-center mgt-10" style="min-height:unset">
+      <view class="title font-color-gray">详情图片:</view>
+    </view>
+    <scroll-view class="detail-picture margin-horizon-center mgt-20" scroll-x="{{true}}" enable-flex="{{true}}">
+      <image wx:for="{{imageList}}" wx:key="index" class="detail-picture-item radius-15" src="{{item}}" data-index="{{index}}" bindtap="imagePreview" />
+    </scroll-view>
+  </block>
+  <!-- 按钮区域 -->
+  <view wx:if="{{!buttonCustom}}" class="button-area">
+    <view class="button margin-horizon-center font-size-28 font-color-blue" wx:for="{{button}}" wx:key="index" data-index="{{index}}" bindtap="buttonClick">
+      {{item}}
+    </view>
+  </view>
+  <view wx:else class="button-area">
+    <slot></slot>
+  </view>
+</view>

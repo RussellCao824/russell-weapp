@@ -1,0 +1,16 @@
+@import "../style/index.wxss";
+
+.percent-line {
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.percent-line-area {
+  width: 200rpx;
+}

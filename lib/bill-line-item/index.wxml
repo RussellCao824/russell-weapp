@@ -1,0 +1,24 @@
+<wxs src="../wxs/tools.wxs" module="tools" />
+<line-divider width="{{690}}"></line-divider>
+<view class="weui-cell" hover-class="{{hoverClass?'weui-cell_active':''}}" style="padding: 30rpx">
+  <!-- 是否显示图片组件 -->
+  <view wx:if="{{hasPicture}}" class="weui-cell__hd" style="position: relative;margin-right: 20rpx;">
+    <image lazy-load="{{true}}" class="image border-round" mode="scaleToFill" src="{{billData.imgSrc}}" />
+  </view>
+  <!-- 紧挨图片的文字描述部分，一般最多分为3行 -->
+  <view class="weui-cell__bd" style="overflow:hidden">
+    <!-- 第一行：标题行 -->
+    <view class="weui-flex">
+      <view class="weui-flex__item font-size-34 font-weight-bold title" style="font-weight:normal">
+        {{ billData.title }}
+      </view>
+      <view class="font-size-28 font-weight-bold status-info" style="color:{{tools.dailyStatusColorConvert(billData.status)}}">
+        {{tools.dailyStatusConvert(billData.status)}}
+      </view>
+    </view>
+    <!-- 第二行：附加文字行 -->
+    <view class="font-size-26 font-color-blue title">{{billData.subTitle}}</view>
+    <!-- 第三行：附加文字行 -->
+    <view class="font-size-26 font-weight-bold">{{billData.info}}</view>
+  </view>
+</view>

@@ -1,0 +1,63 @@
+@import "../style/index.wxss";
+
+.content-area {
+  width: 670rpx;
+  background-color: #ffffff;
+  border: 0px;
+  padding-top: 70rpx;
+  padding-bottom: 70rpx;
+  position: absolute;
+  left: 42rpx;
+  margin-bottom: 50rpx;
+}
+
+.content-item {
+  width: 600rpx;
+  min-height: 50rpx;
+  border: 0px;
+  display: flex;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.detail-picture {
+  width: 550rpx;
+  height: 120rpx;
+  white-space: nowrap;
+}
+
+.detail-picture-item {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 25rpx;
+}
+
+.title {
+  width: 30%;
+  border: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.info {
+  width: 70%;
+  border: 0px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.button-area {
+  margin-top: 70rpx;
+}
+
+.button {
+  width: 540rpx;
+  height: 70rpx;
+  margin-top: 40rpx;
+  border-radius: 30px;
+  border: 1px solid #4a95ea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

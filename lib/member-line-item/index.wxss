@@ -1,0 +1,57 @@
+@import "../style/index.wxss";
+
+.member-item-line {
+  width: 680rpx;
+  height: 150rpx;
+  display: flex;
+}
+
+.extra-info {
+  width: 680rpx;
+}
+
+.board-item-line i {
+  font-size: 55rpx;
+}
+
+.head-image {
+  width: 112rpx;
+  height: 112rpx;
+  margin-right: 20rpx;
+  display: block;
+}
+
+.swiper-area {
+  width: 100vw;
+  height: 720rpx;
+}
+
+.handle-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.handle-item i {
+  font-size: 58rpx;
+  margin-right: 20rpx;
+}
+
+.info-line {
+  width: 700rpx;
+  height: 60rpx;
+}
+
+.info-head-image {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+  display: block;
+  position: relative;
+  top: -2rpx;
+}
+
+.icon {
+  position: relative;
+  top: 3rpx;
+}

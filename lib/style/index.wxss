@@ -1,0 +1,3 @@
+@import "./common.wxss";
+@import "./iconfont.wxss";
+@import "./weui.wxss";

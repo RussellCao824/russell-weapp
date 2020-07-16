@@ -1,0 +1,9 @@
+@import "../style/index.wxss";
+
+.top-radius-box {
+  width: 100%;
+  background-color: #ffffff;
+  position: relative;
+  z-index: 999;
+  padding-top: 54rpx;
+}

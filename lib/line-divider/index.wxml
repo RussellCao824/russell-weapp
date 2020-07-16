@@ -1,0 +1,1 @@
+<view class="divier" style="width:{{width}}rpx;height:{{height}}px;background-color:{{backgroundColor}};top:{{top}}px;"></view>

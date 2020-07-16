@@ -1,0 +1,21 @@
+@import "../style/index.wxss";
+
+.search-bar-box {
+  width: 680rpx;
+  height: 70rpx;
+  border: 1px solid #bbbbbb;
+  border-radius: 15rpx;
+  display: flex;
+}
+
+.icon {
+  width: 72rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-area {
+  width: 608rpx;
+  padding: 0px 20rpx 0px 0px;
+}

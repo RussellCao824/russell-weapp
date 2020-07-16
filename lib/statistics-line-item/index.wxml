@@ -1,0 +1,15 @@
+<wxs src="../wxs/tools.wxs" module="tools" />
+<view class="weui-cell weui-cell_example margin-horizon-center statistics-line padding-none" style="width:{{width}}rpx;height:{{height}}rpx">
+  <!-- 头像或者icon区域 -->
+  <view class="weui-cell__hd mgr-10">
+    <slot></slot>
+  </view>
+  <view class="mgr-10 font-size-30 font-weight-bold">{{title}}</view>
+  <view class="weui-cell__bd weui-cell_primary percent-line">
+    <view class="percent-number font-size-24 font-color-gray mgr-5">{{percent}}%</view>
+    <view class="percent-line-area">
+      <van-progress percentage="{{percent}}" show-pivot="{{false}}" stroke-width="{{8}}" />
+    </view>
+  </view>
+  <view class="font-size-28 font-weight-bold">{{value}}{{dataUnit}}</view>
+</view>

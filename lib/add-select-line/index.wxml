@@ -1,0 +1,14 @@
+<view>
+  <!-- 成员基本信息介绍行 -->
+  <view class="weui-cell weui-cell_example padding-none member-item-line margin-horizon-center">
+    <view class="weui-cell__hd mgr-5">
+      <i class="iconfont {{iconName}} font-size-44"></i>
+    </view>
+    <view class="weui-cell__bd weui-cell_primary font-size-28">
+      <view>{{title}}</view>
+    </view>
+    <view class="select-title align-right">
+      <slot></slot>
+    </view>
+  </view>
+</view>

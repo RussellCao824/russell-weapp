@@ -1,7 +1,5 @@
-/* components/self/goods-item/index.wxss */
+@import "../style/index.wxss";
 
-@import "../../../assets/styles/weui.wxss";
-@import "../../../assets/styles/common.wxss";
 .reject-reason-input {
   position: fixed;
   left: 0px;

@@ -1,0 +1,29 @@
+@import "../style/index.wxss";
+
+.input-line {
+  position: fixed;
+  bottom: 0px;
+  z-index: 9999;
+}
+
+.member-item-line {
+  width: 660rpx;
+  height: 96rpx;
+  display: flex;
+}
+
+.post-button {
+  width: 140rpx;
+  height: 50rpx;
+  border-radius: 30rpx;
+  border: 1px solid #4a95ea;
+  color: #4a95ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  position: relative;
+  top: 5rpx;
+}

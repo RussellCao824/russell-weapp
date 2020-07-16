@@ -1,0 +1,8 @@
+<view class="search-bar-box margin-horizon-center" style="width:{{width}}rpx;height:{{height}}rpx">
+    <view class="icon">
+        <i class="iconfont iconsearch font-size-48 font-color-gray"></i>
+    </view>
+    <view class="text-area">
+        <input value="{{value}}" class="full-size font-size-28" type="text" confirm-type="search" placeholder-class="font-size-28" placeholder="{{placeholder}}" bindconfirm="searchConfirm" bindinput="searchInput" />
+    </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="image-font-area" style="width:{{buttonStyle.areaWidth}}rpx;height:{{buttonStyle.areaHeight}}rpx;background-color:{{buttonStyle.areaBgColor}};border-radius:{{buttonStyle.radius}}rpx">
+    <block wx:if="{{imageFront}}">
+        <view class="image-area">
+            <image class="{{buttonStyle.isRound ? 'border-round' : ''}}" style="width:{{buttonStyle.imgWidth}};height:{{buttonStyle.imgHeight}}" wx:if="{{isImage}}" src="{{imgSrc}}" />
+            <view wx:else>
+                <icon class="iconfont {{iconName}}" style="font-size:{{buttonStyle.iconSize}}rpx;color:{{buttonStyle.iconColor}}"></icon>
+            </view>
+        </view>
+        <view class="font-area" style="color:{{buttonStyle.fontColor}};font-size:{{buttonStyle.fontSize}}">
+            {{text}}
+        </view>
+    </block>
+    <block wx:else>
+        <view class="font-area" style="color:{{buttonStyle.fontColor}};font-size:{{buttonStyle.fontSize}}">
+            {{text}}
+        </view>
+        <view class="image-area">
+            <image class="{{buttonStyle.isRound ? 'border-round' : ''}}" style="width:{{buttonStyle.imgWidth}};height:{{buttonStyle.imgHeight}}" wx:if="{{isImage}}" src="{{imgSrc}}" />
+            <view wx:else>
+                <icon class="iconfont {{iconName}}" style="font-size:{{buttonStyle.iconSize}}rpx;color:{{buttonStyle.iconColor}}"></icon>
+            </view>
+        </view>
+    </block>
+</view>

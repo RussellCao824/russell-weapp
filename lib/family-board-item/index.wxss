@@ -1,0 +1,58 @@
+@import "../style/index.wxss";
+
+.board-item-line {
+  width: 700rpx;
+  height: 110rpx;
+  display: flex;
+}
+
+.board-item-line i {
+  font-size: 55rpx;
+}
+
+.head-image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-right: 20rpx;
+  display: block;
+}
+
+.swiper-area {
+  width: 100vw;
+  height: 720rpx;
+}
+
+.handle-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.handle-item i {
+  font-size: 58rpx;
+  margin-right: 20rpx;
+}
+
+/* 轮播图dots点样式 */
+
+.square-12 {
+  width: 12rpx;
+  height: 12rpx;
+  background-color: #d8d8d8;
+  border-radius: 6rpx;
+  transition: width 0.2s linear;
+}
+
+.info-line {
+  width: 700rpx;
+  height: 60rpx;
+}
+
+.info-head-image {
+  width: 38rpx;
+  height: 38rpx;
+  margin-right: 20rpx;
+  display: block;
+  position: relative;
+  top: -2rpx;
+}

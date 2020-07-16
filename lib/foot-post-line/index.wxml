@@ -1,0 +1,22 @@
+<view class="post-line">
+  <view class="weui-cell weui-cell_example padding-none member-item-line margin-horizon-center">
+    <view wx:if="{{pickerShow}}" class="weui-cell__bd weui-cell_primary font-size-28">
+      <view class="foot-date-picker">
+        {{title}}
+        <picker mode="{{mode}}" value="{{value}}" bindchange="bindDateChange" start="{{start}}" end="{{end}}" range="{{range}}" range-key="{{rangeKey}}">
+          <view class="mgl-10 date-text">
+            {{valueContent}}
+            <i class="iconfont iconicon-test1 icon"></i>
+          </view>
+        </picker>
+      </view>
+    </view>
+    <view wx:else class="weui-cell__bd weui-cell_primary font-size-28"></view>
+    <view>
+      <view class="post-button" bindtap="postSubmit">
+        <i class="iconfont {{iconName}} font-size-36 mgr-5"></i>
+        <font class="font-size-28">{{postTitle}}</font>
+      </view>
+    </view>
+  </view>
+</view>

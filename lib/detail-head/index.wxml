@@ -1,0 +1,8 @@
+<!-- 背景颜色显示模式 -->
+<view wx:if="{{!bgImageShow}}" class="detail-head" style="background-color:{{backgroundColor}};height:{{height}}rpx;border-radius:100% / 0 0 {{radius}}% {{radius}}%;padding-top:{{paddingTop}}rpx">
+  <slot></slot>
+</view>
+<!-- 背景图片显示模式 -->
+<view wx:else class="detail-head" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url('{{imageSrc}}') center/cover;height:{{height}}rpx;border-radius:100% / 0 0 {{radius}}% {{radius}}%;padding-top:{{paddingTop}}rpx">
+  <slot></slot>
+</view>

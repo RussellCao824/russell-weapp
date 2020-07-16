@@ -1,0 +1,96 @@
+<wxs src="../wxs/tools.wxs" module="tools" />
+<view class="mgb-35">
+  <!-- 头部用户信息 -->
+  <view class="weui-cell weui-cell_example padding-none board-item-line margin-horizon-center">
+    <view class="weui-cell__hd">
+      <image class="border-round head-image" src="{{boardItem.headPic}}" alt></image>
+    </view>
+    <view class="weui-cell__bd weui-cell_primary font-size-28 font-weight-bold">
+      <view>{{boardItem.name}}</view>
+      <view class="font-weight-normal">{{boardItem.location}}</view>
+    </view>
+    <i wx:if="{{boardItem.userId == loginUserId}}" class="iconfont iconashbin" data-id="{{boardItem.id}}" bindtap="boardDelete"></i>
+  </view>
+  <!-- 图片轮播图 -->
+  <view class="swiper-area">
+    <swiper class="full-size" autoplay="{{true}}" interval="{{20000}}" duration="{{500}}" bindchange="imageSwitch">
+      <swiper-item wx:for="{{boardItem.boardImage}}" wx:key="index">
+        <image class="full-size" src="{{item}}" mode="aspectFill" alt></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 操作栏 -->
+  <view class="board-item-line margin-horizon-center">
+    <!-- 点赞点踩操作区域 -->
+    <view class="handle-item">
+      <i class="iconfont {{tools.boardCommentCheck(loginUserId,boardItem.likeMember) ? 'icongood-fill font-color-red' : 'icongood'}}" data-type="{{1}}" bindtap="{{(!tools.boardCommentCheck(loginUserId,boardItem.likeMember)) && (!tools.boardCommentCheck(loginUserId,boardItem.hateMember))?'commentHandle':'' }}"></i>
+      <i class="iconfont {{tools.boardCommentCheck(loginUserId,boardItem.hateMember) ? 'iconbad-fill' : 'iconbad'}}" data-type="{{2}}" bindtap="{{(!tools.boardCommentCheck(loginUserId,boardItem.likeMember)) && (!tools.boardCommentCheck(loginUserId,boardItem.hateMember))?'commentHandle':'' }}"></i>
+      <i class="iconfont iconaccount" data-type="{{3}}" bindtap="goMemberList"></i>
+    </view>
+    <!-- 轮播图dots显示区域 只有一张图片时，dot不显示 -->
+    <view class="handle-item flex-horizon-center">
+      <view wx:if="{{boardItem.boardImage.length > 1}}" class="square-12 mgr-5 {{current == index ? 'bg-color-blue' : ''}}" wx:for="{{boardItem.boardImage.length}}" wx:key="index"></view>
+    </view>
+    <!-- 家榜类型图标区域 -->
+    <view class="handle-item flex-horizon-right">
+      <i class="iconfont margin-none {{tools.boardStatusConvert(boardItem.status)}}"></i>
+    </view>
+  </view>
+  <!-- 点赞信息展示 -->
+  <view wx:if="{{boardItem.likeMember.length}}" class="weui-cell weui-cell_example padding-none info-line margin-horizon-center">
+    <view class="weui-cell__hd">
+      <image class="border-round info-head-image" src="{{boardItem.likeMember[0].head_img}}" alt></image>
+    </view>
+    <view class="weui-cell__bd weui-cell_primary font-size-28">
+      <view>
+        <font class="font-weight-bold" data-type="{{1}}" bindtap="{{boardItem.likeMember.length == 1?'goMemberList':''}}">
+          {{boardItem.likeMember[0].true_name}}
+        </font>
+        <block wx:if="{{boardItem.likeMember.length > 1}}">
+          和
+          <font class="font-weight-bold" data-type="{{1}}" bindtap="goMemberList">
+            其他{{boardItem.likeMember.length}}位成员
+          </font>
+        </block>
+        赞了
+      </view>
+    </view>
+  </view>
+  <!-- 点踩信息展示 -->
+  <view wx:if="{{boardItem.hateMember.length}}" class="weui-cell weui-cell_example padding-none info-line margin-horizon-center">
+    <view class="weui-cell__hd">
+      <image class="border-round info-head-image" src="{{boardItem.hateMember[0].head_img}}" alt></image>
+    </view>
+    <view class="weui-cell__bd weui-cell_primary font-size-28">
+      <view>
+        <font class="font-weight-bold" data-type="{{2}}" bindtap="{{boardItem.hateMember.length == 1?'goMemberList':''}}">
+          {{boardItem.hateMember[0].true_name}}
+        </font>
+        <block wx:if="{{boardItem.hateMember.length > 1}}">
+          和
+          <font class="font-weight-bold" data-type="{{2}}" bindtap="goMemberList">
+            其他{{boardItem.hateMember.length}}位成员
+          </font>
+        </block>
+        踩了
+      </view>
+    </view>
+  </view>
+  <!-- 家榜故事展示 -->
+  <view class="weui-cell weui-cell_example mgt-5 height-unset padding-none info-line margin-horizon-center">
+    <view class="weui-cell__bd weui-cell_primary font-size-28">
+      <view>
+        <font class="font-weight-bold mgr-5">{{boardItem.name}}</font>
+        {{boardItem.boardStory}}
+      </view>
+    </view>
+  </view>
+  <!-- 家榜发布时间 -->
+  <view class="weui-cell weui-cell_example mgt-5 height-unset padding-none info-line margin-horizon-center">
+    <view class="weui-cell__bd weui-cell_primary font-size-28">
+      <view>
+        <font class="font-color-gray font-size-24">{{boardItem.time}}</font>
+      </view>
+    </view>
+  </view>
+</view>

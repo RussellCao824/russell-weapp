@@ -1,0 +1,19 @@
+@import "../style/index.wxss";
+
+.image-font-area {
+  display: flex;
+}
+
+.image-area {
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.font-area {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
