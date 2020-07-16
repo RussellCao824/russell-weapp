@@ -1,0 +1,50 @@
+/* components/self/goods-item/index.wxss */
+
+@import "../../../assets/styles/weui.wxss";
+@import "../../../assets/styles/common.wxss";
+.reject-reason-input {
+  position: fixed;
+  left: 0px;
+  z-index: 99999;
+  width: 100vw;
+  height: 100rpx;
+  border-top: 1px solid #dddddd;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #dddddd;
+}
+
+.input-container {
+  height: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.reject-reason-input view textarea {
+  position: absolute;
+  bottom: 24rpx;
+  left: 20vw;
+  width: 60vw;
+  font-size: 28rpx;
+}
+
+.user-head-img {
+  width: 70rpx;
+  height: 70rpx;
+  position: absolute;
+  bottom: 15rpx;
+  left: 5vw;
+}
+
+.submit-button {
+  width: 10vw;
+  height: 70rpx;
+  position: absolute;
+  bottom: 15rpx;
+  right: 5vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}

@@ -1,7 +1,7 @@
 @import "../index.wxss";
 .nav-bar-line {
   width: 100vw;
-  position: absolute;
+  position: fixed;
   left: 0px;
   display: flex;
   align-items: center;

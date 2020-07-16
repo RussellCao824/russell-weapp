@@ -5,7 +5,22 @@ page {
   background-color: #ffffff;
 }
 
+/* 遮罩层 全屏 */
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  opacity: 0.7;
+  z-index: 999;
+}
+
 /* 文字大小样式 */
+.font-size-60 {
+  font-size: 60rpx !important;
+}
 
 .font-size-54 {
   font-size: 54rpx !important;
@@ -82,6 +97,9 @@ page {
 }
 
 /* 文字加重格式 */
+.font-weight-normal {
+  font-weight: normal !important;
+}
 
 .font-weight-bold {
   font-weight: bold !important;
@@ -93,6 +111,20 @@ page {
 
 .font-weight-900 {
   font-weight: 900 !important;
+}
+
+/* 图片模糊样式 */
+.blur-10 {
+  filter: blur(10rpx) !important;
+}
+
+.blur-5 {
+  filter: blur(10rpx) !important;
+}
+
+/* 组件明暗度处理 */
+.dark-80 {
+  filter: brightness(80%) !important;
 }
 
 /* 外边距居中 */
@@ -127,6 +159,11 @@ page {
   padding: 0px !important;
 }
 
+/* 垂直方向的内边距 */
+.padding-vertical-40 {
+  padding: 40rpx 0px !important;
+}
+
 /* 组件尺寸 */
 
 .full-size {
@@ -141,10 +178,17 @@ page {
 /* 左右居中（包含flex布局）*/
 
 .flex-horizon-center {
-  justify-content: center;
+  display: flex !important;
+  justify-content: center !important;
+}
+
+.flex-vertical-center {
+  display: flex !important;
+  align-items: center !important;
 }
 
 .flex-horizon-right {
+  display: flex;
   justify-content: flex-end;
 }
 
@@ -152,6 +196,10 @@ page {
 
 .border-round {
   border-radius: 50% !important;
+}
+
+.radius-35 {
+  border-radius: 35rpx;
 }
 
 .radius-28 {
@@ -174,6 +222,25 @@ page {
 
 .bg-color-blue {
   background-color: #3d8dfb !important;
+}
+
+.bg-color-gray {
+  background-color: #bbbbbb !important;
+}
+
+.bg-color-red {
+  background-color: #fe5745 !important;
+}
+
+/* 溢出内容省略号 */
+.over-flow-hidden {
+  overflow: hidden !important;
+  white-space: nowrap !important;
+  text-overflow: ellipsis !important;
+}
+
+.over-hidden {
+  overflow: hidden !important;
 }
 
 /** 初始化没有数据 */
@@ -289,12 +356,28 @@ page {
   margin-top: 200rpx !important;
 }
 
+.mgb-none {
+  margin-bottom: 0px !important;
+}
+
+.mgt-none {
+  margin-top: 0px !important;
+}
+
+.mgl-none {
+  margin-left: 0px !important;
+}
+
+.mgr-none {
+  margin-right: 0px !important;
+}
+
 .mgb-10 {
-  margin-bottom: 20rpx !important;
+  margin-bottom: 10rpx !important;
 }
 
 .mgb-20 {
-  margin-bottom: 40rpx !important;
+  margin-bottom: 20rpx !important;
 }
 
 .mgb-35 {

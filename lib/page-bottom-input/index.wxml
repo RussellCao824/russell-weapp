@@ -1,0 +1,12 @@
+<block wx:if="{{show}}">
+  <!-- 遮罩层 -->
+  <view class="overlay" bindtap="overlayHide" />
+  <!-- 页面底部input框 -->
+  <view class="reject-reason-input" style="bottom:{{inputBottom}}px;height:{{inputViewHeight}}rpx">
+    <image class="user-head-img border-round" src="{{headImg}}" />
+    <view class="input-container">
+      <textarea maxlength="{{maxLength}}" auto-height="{{true}}" show-confirm-bar="{{false}}" fixed="{{true}}" hold-keyboard="{{true}}" adjust-position="{{false}}" cursor-spacing="{{cursorSpacing}}rpx" placeholder="{{placeholder}}" auto-focus="{{true}}" bindkeyboardheightchange="keyboardHeightChange" bindinput="input" bindlinechange="lineChange"></textarea>
+    </view>
+    <view class="font-color-blue submit-button" bindtap="submit">{{submitText}}</view>
+  </view>
+</block>
